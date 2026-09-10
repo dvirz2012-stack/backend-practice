@@ -14,6 +14,7 @@ data format that is interchangeable with programming languages also be based on 
 and object is an unordered set of name/value pairs. An object begins with a { and ends with a } , each name is followed by a colon :
 and the name/value pairs are seperated with a , comma.
 
+(I tried my best on these graphs)...
 Object:
   { ---> whitespace ---------------------------- } -->
      |                                         |
