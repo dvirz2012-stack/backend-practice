@@ -32,6 +32,7 @@ Array:
     |________________________________________|
 
 
+and so on, there's also strings, numbers and whitespaces.
 async / await execution order
 
 in JS theres a function called an async function:
