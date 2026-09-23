@@ -63,5 +63,25 @@ let's take a look at it:
 this is how we pass the parameters:
 
 ```js
+  function x(name){
+    console.log(`hello, ${name}`);
+  }
 
+  setTimeOut(x, 3000, "programmer");
 ```
+
+x is the function to execute, 3000 is the delay before the function executes,
+and "programmer" is the parameter pased to the function.
+
+let's take a look at the function loadScript(src), that loads a script with the given src:
+
+```js
+  function loadScript(src){
+    let script = document.createElement('script');
+    script.src = src;
+    document.head.append(script);
+  }  
+```
+
+we created a <script> tag and append it to the page, this causes the script
+with the given src to start loading and run when complete.
