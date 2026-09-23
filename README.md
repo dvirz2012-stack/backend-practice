@@ -15,6 +15,7 @@ and object is an unordered set of name/value pairs. An object begins with a { an
 and the name/value pairs are seperated with a , comma.
 
 (I tried my best on these graphs)...
+```text
 Object:
   { ---> whitespace ---------------------------- } -->
      |                                         |
@@ -22,15 +23,15 @@ Object:
     |                            |             |
     |        ____________________|             |
     |        |_____whitespace --> : --> value--|
-    |----------------------------------------- |
+    |------------------------------------------|
 
 Array:
   [ ---> whitespace ---------------------------- ] -->
      |                                       |
-    ,--> value ------------------------------
+    ,--> value ------------------------------|
     |                                        |
     |________________________________________|
-
+```
 
 and so on, there's also strings, numbers and whitespaces.
 async / await execution order
@@ -40,4 +41,27 @@ in JS theres a function called an async function:
   async function x(){
     return 1;
   }
+```
+
+Many functions are provided by JavaScript host environments that allow you to schedule asynchronous actions, In other words, actions that we initiate now, but they finish later.
+
+for example, there's the setTimeOut function.
+
+let's take a look at it:
+
+```js
+  setTimeOut (() => {
+    console.log("this message appers after 2 seconds");
+  }, 2000);
+```
+
+2000 means 2000 milliseconds, which is 2 second. this is basic usage, let's take a look at the syntax:
+
+```js
+  setTimeOut(function, delay, param1, param2, ...);
+```
+this is how we pass the parameters:
+
+```js
+
 ```
